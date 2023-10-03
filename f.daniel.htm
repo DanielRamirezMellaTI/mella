@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Superposición de imágenes</title>
+  <style>
+    .contenedor {
+      position: relative;
+      width: 180px; /* Ajusta el ancho según tu necesidad */
+      height: 110px; /* Ajusta la altura según tu necesidad */
+    }
+
+    .imagen-fondo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+
+    .imagen-superpuesta {
+      position: static;
+      top: 0; 
+      left: 100;
+      width: 100%;
+      height: 100%; 
+      z-index: 2;
+    }
+  </style>
+</head>
+<body>
+
+<div class="contenedor">
+  <td width="1">
+  <img src="C:\Users\daniel\AppData\Roaming\Microsoft\Signatures\mella.png" width="180" height="110" class="imagen-fondo">
+  <img src="https://mella.com.py/mella.png" alt="Imagen superpuesta"  width="180" height="110"  class="imagen-superpuesta">
+</td>
+</div>
+
+</body>
+</html>
